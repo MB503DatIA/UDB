@@ -11,8 +11,8 @@
   DTS:LocaleID="17418"
   DTS:ObjectName="Desafio_1"
   DTS:PackageType="5"
-  DTS:VersionBuild="23"
-  DTS:VersionGUID="{AD633AAB-8923-4440-8BF6-E7492ECB952F}">
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{09F8F5CD-3DE4-4431-86BC-41D5A732C5B2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -835,7 +835,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select c.codigo_cliente, c.dui, c.nit, c.apellidos, c.nombres, c.sexo, c.numero_telefono, c.estado ,
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select
 tc.nombre_tipo tipo_cliente, idfacturacion factura, monto_facturacion, 'Costa Rica' Pais
 from facturacion f
 join cliente c on c.idcliente = f.idcliente
@@ -875,94 +875,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                   refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[dui]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[dui]"
-                      length="9"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[dui]"
-                      name="dui"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[nit]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[nit]"
-                      length="14"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[nit]"
-                      name="nit"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[apellidos]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[apellidos]"
-                      length="250"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[apellidos]"
-                      name="apellidos"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[nombres]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[nombres]"
-                      length="250"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[nombres]"
-                      name="nombres"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[sexo]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[sexo]"
-                      length="1"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[sexo]"
-                      name="sexo"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[numero_telefono]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[numero_telefono]"
-                      length="8"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[numero_telefono]"
-                      name="numero_telefono"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[estado]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[estado]"
-                      length="1"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[estado]"
-                      name="estado"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[codigo_cliente]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[codigo_cliente]"
-                      length="15"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[codigo_cliente]"
-                      name="codigo_cliente"
-                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[monto_facturacion]"
                       dataType="numeric"
@@ -1009,54 +921,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[dui]"
-                      codePage="1252"
-                      dataType="str"
-                      length="9"
-                      name="dui" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[nit]"
-                      codePage="1252"
-                      dataType="str"
-                      length="14"
-                      name="nit" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[apellidos]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      name="apellidos" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[nombres]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      name="nombres" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[sexo]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="sexo" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[numero_telefono]"
-                      codePage="1252"
-                      dataType="str"
-                      length="8"
-                      name="numero_telefono" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[estado]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="estado" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[codigo_cliente]"
-                      codePage="1252"
-                      dataType="str"
-                      length="15"
-                      name="codigo_cliente" />
-                    <externalMetadataColumn
                       refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].ExternalColumns[monto_facturacion]"
                       dataType="numeric"
                       name="monto_facturacion"
@@ -1093,55 +957,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                       lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[Pais]"
                       name="Pais" />
                     <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[dui]"
-                      codePage="1252"
-                      dataType="str"
-                      length="9"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[dui]"
-                      name="dui" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[nit]"
-                      codePage="1252"
-                      dataType="str"
-                      length="14"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[nit]"
-                      name="nit" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[apellidos]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[apellidos]"
-                      name="apellidos" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[nombres]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[nombres]"
-                      name="nombres" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[sexo]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[sexo]"
-                      name="sexo" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[numero_telefono]"
-                      codePage="1252"
-                      dataType="str"
-                      length="8"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[numero_telefono]"
-                      name="numero_telefono" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[estado]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[estado]"
-                      name="estado" />
-                    <outputColumn
                       refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[tipo_cliente]"
                       codePage="1252"
                       dataType="str"
@@ -1153,13 +968,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                       dataType="i4"
                       lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[factura]"
                       name="factura" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[codigo_cliente]"
-                      codePage="1252"
-                      dataType="str"
-                      length="15"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[codigo_cliente]"
-                      name="codigo_cliente" />
                     <outputColumn
                       refId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Error Output].Columns[monto_facturacion]"
                       dataType="numeric"
@@ -1755,7 +1563,7 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select c.codigo_cliente, c.dui, c.nit, c.apellidos, c.nombres, c.sexo, c.numero_telefono, c.estado ,
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select
 tc.nombre_tipo tipo_cliente, idfacturacion factura, monto_facturacion, 'Guatemala' Pais
 from facturacion f
 join cliente c on c.idcliente = f.idcliente
@@ -1795,94 +1603,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                   refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[dui]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[dui]"
-                      length="9"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[dui]"
-                      name="dui"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[nit]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[nit]"
-                      length="14"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[nit]"
-                      name="nit"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[apellidos]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[apellidos]"
-                      length="250"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[apellidos]"
-                      name="apellidos"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[nombres]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[nombres]"
-                      length="250"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[nombres]"
-                      name="nombres"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[sexo]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[sexo]"
-                      length="1"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[sexo]"
-                      name="sexo"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[numero_telefono]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[numero_telefono]"
-                      length="8"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[numero_telefono]"
-                      name="numero_telefono"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[estado]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[estado]"
-                      length="1"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[estado]"
-                      name="estado"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[codigo_cliente]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[codigo_cliente]"
-                      length="15"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[codigo_cliente]"
-                      name="codigo_cliente"
-                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[monto_facturacion]"
                       dataType="numeric"
@@ -1929,54 +1649,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[dui]"
-                      codePage="1252"
-                      dataType="str"
-                      length="9"
-                      name="dui" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[nit]"
-                      codePage="1252"
-                      dataType="str"
-                      length="14"
-                      name="nit" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[apellidos]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      name="apellidos" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[nombres]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      name="nombres" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[sexo]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="sexo" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[numero_telefono]"
-                      codePage="1252"
-                      dataType="str"
-                      length="8"
-                      name="numero_telefono" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[estado]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="estado" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[codigo_cliente]"
-                      codePage="1252"
-                      dataType="str"
-                      length="15"
-                      name="codigo_cliente" />
-                    <externalMetadataColumn
                       refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].ExternalColumns[monto_facturacion]"
                       dataType="numeric"
                       name="monto_facturacion"
@@ -2013,55 +1685,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                       lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[Pais]"
                       name="Pais" />
                     <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[dui]"
-                      codePage="1252"
-                      dataType="str"
-                      length="9"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[dui]"
-                      name="dui" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[nit]"
-                      codePage="1252"
-                      dataType="str"
-                      length="14"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[nit]"
-                      name="nit" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[apellidos]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[apellidos]"
-                      name="apellidos" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[nombres]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[nombres]"
-                      name="nombres" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[sexo]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[sexo]"
-                      name="sexo" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[numero_telefono]"
-                      codePage="1252"
-                      dataType="str"
-                      length="8"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[numero_telefono]"
-                      name="numero_telefono" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[estado]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[estado]"
-                      name="estado" />
-                    <outputColumn
                       refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[tipo_cliente]"
                       codePage="1252"
                       dataType="str"
@@ -2073,13 +1696,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                       dataType="i4"
                       lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[factura]"
                       name="factura" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[codigo_cliente]"
-                      codePage="1252"
-                      dataType="str"
-                      length="15"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[codigo_cliente]"
-                      name="codigo_cliente" />
                     <outputColumn
                       refId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Error Output].Columns[monto_facturacion]"
                       dataType="numeric"
@@ -2389,7 +2005,7 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select c.codigo_cliente, c.dui, c.nit, c.apellidos, c.nombres, c.sexo, c.numero_telefono, c.estado ,
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select
 tc.nombre_tipo tipo_cliente, idfacturacion factura, monto_facturacion, 'Honduras' Pais
 from facturacion f
 join cliente c on c.idcliente = f.idcliente
@@ -2429,94 +2045,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                   refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[dui]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[dui]"
-                      length="9"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[dui]"
-                      name="dui"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[nit]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[nit]"
-                      length="14"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[nit]"
-                      name="nit"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[apellidos]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[apellidos]"
-                      length="250"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[apellidos]"
-                      name="apellidos"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[nombres]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[nombres]"
-                      length="250"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[nombres]"
-                      name="nombres"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[sexo]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[sexo]"
-                      length="1"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[sexo]"
-                      name="sexo"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[numero_telefono]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[numero_telefono]"
-                      length="8"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[numero_telefono]"
-                      name="numero_telefono"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[estado]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[estado]"
-                      length="1"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[estado]"
-                      name="estado"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[codigo_cliente]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[codigo_cliente]"
-                      length="15"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[codigo_cliente]"
-                      name="codigo_cliente"
-                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[monto_facturacion]"
                       dataType="numeric"
@@ -2563,54 +2091,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[dui]"
-                      codePage="1252"
-                      dataType="str"
-                      length="9"
-                      name="dui" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[nit]"
-                      codePage="1252"
-                      dataType="str"
-                      length="14"
-                      name="nit" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[apellidos]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      name="apellidos" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[nombres]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      name="nombres" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[sexo]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="sexo" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[numero_telefono]"
-                      codePage="1252"
-                      dataType="str"
-                      length="8"
-                      name="numero_telefono" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[estado]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="estado" />
-                    <externalMetadataColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[codigo_cliente]"
-                      codePage="1252"
-                      dataType="str"
-                      length="15"
-                      name="codigo_cliente" />
-                    <externalMetadataColumn
                       refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].ExternalColumns[monto_facturacion]"
                       dataType="numeric"
                       name="monto_facturacion"
@@ -2647,55 +2127,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                       lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[Pais]"
                       name="Pais" />
                     <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[dui]"
-                      codePage="1252"
-                      dataType="str"
-                      length="9"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[dui]"
-                      name="dui" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[nit]"
-                      codePage="1252"
-                      dataType="str"
-                      length="14"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[nit]"
-                      name="nit" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[apellidos]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[apellidos]"
-                      name="apellidos" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[nombres]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[nombres]"
-                      name="nombres" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[sexo]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[sexo]"
-                      name="sexo" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[numero_telefono]"
-                      codePage="1252"
-                      dataType="str"
-                      length="8"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[numero_telefono]"
-                      name="numero_telefono" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[estado]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[estado]"
-                      name="estado" />
-                    <outputColumn
                       refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[tipo_cliente]"
                       codePage="1252"
                       dataType="str"
@@ -2707,13 +2138,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                       dataType="i4"
                       lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[factura]"
                       name="factura" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[codigo_cliente]"
-                      codePage="1252"
-                      dataType="str"
-                      length="15"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[codigo_cliente]"
-                      name="codigo_cliente" />
                     <outputColumn
                       refId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Error Output].Columns[monto_facturacion]"
                       dataType="numeric"
@@ -3049,126 +2473,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                   name="Union All Input 1">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 1].Columns[dui]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="9"
-                      cachedName="dui"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[dui]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[dui]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 1].Columns[nit]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="14"
-                      cachedName="nit"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[nit]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[nit]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 1].Columns[apellidos]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="250"
-                      cachedName="apellidos"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[apellidos]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[apellidos]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 1].Columns[nombres]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="250"
-                      cachedName="nombres"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[nombres]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[nombres]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 1].Columns[sexo]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="sexo"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[sexo]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[sexo]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 1].Columns[numero_telefono]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="8"
-                      cachedName="numero_telefono"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[numero_telefono]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[numero_telefono]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 1].Columns[estado]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="estado"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[estado]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[estado]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 1].Columns[codigo_cliente]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="15"
-                      cachedName="codigo_cliente"
-                      lineageId="Package\Desafio 1\Costa Rica.Outputs[OLE DB Source Output].Columns[codigo_cliente]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\Desafio 1\Union All.Inputs[Union All Input 1].Columns[monto_facturacion]"
                       cachedDataType="numeric"
                       cachedName="monto_facturacion"
@@ -3235,126 +2539,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                   name="Union All Input 2">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 2].Columns[dui]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="9"
-                      cachedName="dui"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[dui]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[dui]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 2].Columns[nit]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="14"
-                      cachedName="nit"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[nit]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[nit]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 2].Columns[apellidos]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="250"
-                      cachedName="apellidos"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[apellidos]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[apellidos]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 2].Columns[nombres]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="250"
-                      cachedName="nombres"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[nombres]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[nombres]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 2].Columns[sexo]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="sexo"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[sexo]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[sexo]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 2].Columns[numero_telefono]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="8"
-                      cachedName="numero_telefono"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[numero_telefono]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[numero_telefono]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 2].Columns[estado]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="estado"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[estado]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[estado]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 2].Columns[codigo_cliente]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="15"
-                      cachedName="codigo_cliente"
-                      lineageId="Package\Desafio 1\Guatemala.Outputs[OLE DB Source Output].Columns[codigo_cliente]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\Desafio 1\Union All.Inputs[Union All Input 2].Columns[monto_facturacion]"
                       cachedDataType="numeric"
                       cachedName="monto_facturacion"
@@ -3420,126 +2604,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                   hasSideEffects="true"
                   name="Union All Input 3">
                   <inputColumns>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 3].Columns[dui]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="9"
-                      cachedName="dui"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[dui]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[dui]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 3].Columns[nit]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="14"
-                      cachedName="nit"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[nit]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[nit]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 3].Columns[apellidos]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="250"
-                      cachedName="apellidos"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[apellidos]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[apellidos]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 3].Columns[nombres]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="250"
-                      cachedName="nombres"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[nombres]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[nombres]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 3].Columns[sexo]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="sexo"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[sexo]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[sexo]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 3].Columns[numero_telefono]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="8"
-                      cachedName="numero_telefono"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[numero_telefono]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[numero_telefono]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 3].Columns[estado]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="estado"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[estado]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[estado]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Desafio 1\Union All.Inputs[Union All Input 3].Columns[codigo_cliente]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="15"
-                      cachedName="codigo_cliente"
-                      lineageId="Package\Desafio 1\Honduras.Outputs[OLE DB Source Output].Columns[codigo_cliente]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]}</property>
-                      </properties>
-                    </inputColumn>
                     <inputColumn
                       refId="Package\Desafio 1\Union All.Inputs[Union All Input 3].Columns[monto_facturacion]"
                       cachedDataType="numeric"
@@ -3614,62 +2678,6 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
                   refId="Package\Desafio 1\Union All.Outputs[Union All Output 1]"
                   name="Union All Output 1">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[dui]"
-                      codePage="1252"
-                      dataType="str"
-                      length="9"
-                      lineageId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[dui]"
-                      name="dui" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[nit]"
-                      codePage="1252"
-                      dataType="str"
-                      length="14"
-                      lineageId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[nit]"
-                      name="nit" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[apellidos]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      lineageId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[apellidos]"
-                      name="apellidos" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[nombres]"
-                      codePage="1252"
-                      dataType="str"
-                      length="250"
-                      lineageId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[nombres]"
-                      name="nombres" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[sexo]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      lineageId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[sexo]"
-                      name="sexo" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[numero_telefono]"
-                      codePage="1252"
-                      dataType="str"
-                      length="8"
-                      lineageId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[numero_telefono]"
-                      name="numero_telefono" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[estado]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      lineageId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[estado]"
-                      name="estado" />
-                    <outputColumn
-                      refId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]"
-                      codePage="1252"
-                      dataType="str"
-                      length="15"
-                      lineageId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[codigo_cliente]"
-                      name="codigo_cliente" />
                     <outputColumn
                       refId="Package\Desafio 1\Union All.Outputs[Union All Output 1].Columns[monto_facturacion]"
                       dataType="numeric"
@@ -3818,47 +2826,219 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="127.2,41.6"
-          Id="Package\Desafio 1\Costa Rica"
-          TopLeft="113.571428813192,65.7647058247076" />
-        <NodeLayout
-          Size="128.8,41.6"
-          Id="Package\Desafio 1\Guatemala"
-          TopLeft="265.000000564116,64.2352940613423" />
+          Size="164,41.6"
+          Id="Package\Desafio 1\GUBERNAMENTAL"
+          TopLeft="605.753969543459,419.950980024054" />
         <NodeLayout
           Size="123.2,41.6"
           Id="Package\Desafio 1\Honduras"
-          TopLeft="425.000000904713,64.9999999430249" />
+          TopLeft="424.206350109373,64.9999999430249" />
+        <NodeLayout
+          Size="146.4,41.6"
+          Id="Package\Desafio 1\GT Conslidado"
+          TopLeft="52.3809524924576,628.738561555194" />
+        <NodeLayout
+          Size="127.2,41.6"
+          Id="Package\Desafio 1\Costa Rica"
+          TopLeft="112.777778017852,66.6143790265772" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Desafio 1\Data Conversion"
+          TopLeft="255.158730701896,418.982259311208" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Desafio 1\Conditional Split"
+          TopLeft="241.723356523636,515.889822158311" />
         <NodeLayout
           Size="120,41.6"
           Id="Package\Desafio 1\Union All"
           TopLeft="268.061225060428,165.340335989526" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Desafio 1\PREFERENCIAL"
+          TopLeft="814.682541416785,420.207842872787" />
+        <NodeLayout
+          Size="128.8,41.6"
+          Id="Package\Desafio 1\Guatemala"
+          TopLeft="265.793651359456,64.2352940613423" />
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Desafio 1\Hn Consolidado"
+          TopLeft="447.653062177426,586.429318074315" />
+        <NodeLayout
+          Size="120.8,41.6"
+          Id="Package\Desafio 1\TURISTA"
+          TopLeft="917.06349401568,326.74379066713" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Desafio 1\Multicast"
+          TopLeft="273.809524392392,246.810457324934" />
+        <NodeLayout
+          Size="132,41.6"
+          Id="Package\Desafio 1\EJECUTIVO"
+          TopLeft="517.460318561854,341.764705687968" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Desafio 1\Data Conversion 1"
+          TopLeft="705.555557057498,245.947712210509" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Desafio 1\CR Consolidado"
+          TopLeft="17.0634920998158,454.555555171924" />
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\Desafio 1\Conditional Split 1"
+          TopLeft="711.11111262488,338.366012880489" />
+        <NodeLayout
+          Size="126.4,41.6"
+          Id="Package\Desafio 1\Aggregate"
+          TopLeft="274.790250018063,346.097805500418" />
+        <NodeLayout
+          Size="136,41.6"
+          Id="Package\Desafio 1\Aggregate 1"
+          TopLeft="519.047620152535,249.99999988605" />
         <EdgeLayout
-          Id="Package\Desafio 1.Paths[OLE DB Source Output]"
-          TopLeft="177.171428813192,107.364705824708">
+          Id="Package\Desafio 1.Paths[Aggregate Output 1]"
+          TopLeft="335.374490359979,387.697805500418">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="122.889796247236,57.9756301648188"
+              EndConnector="0,31.28445381079"
               Start="0,0"
-              End="122.889796247236,50.4756301648188">
+              End="0,23.78445381079">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.8101935857514" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.8101935857514"
-                    Point2="0,37.8101935857514"
-                    Point3="4,37.8101935857514" />
+                    End="0,23.78445381079" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Desafio 1.Paths[Union All Output 1]"
+          TopLeft="330.93537472641,206.940335989526">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.8701213354071"
+              Start="0,0"
+              End="0,32.3701213354071">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="118.889796247236,37.8101935857514" />
-                  <mssgle:CubicBezierSegment
-                    Point1="118.889796247236,37.8101935857514"
-                    Point2="122.889796247236,37.8101935857514"
-                    Point3="122.889796247236,41.8101935857514" />
+                    End="0,32.3701213354071" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Desafio 1.Paths[TURISTA]"
+          TopLeft="874.31111262488,359.166012880489">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="42.7523813907998,-11.6222222133591"
+              Start="0,0"
+              End="35.2523813907998,-11.6222222133591">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="122.889796247236,50.4756301648188" />
+                    End="17.3761906953999,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.3761906953999,0"
+                    Point2="21.3761906953999,0"
+                    Point3="21.3761906953999,-4" />
+                  <mssgle:LineSegment
+                    End="21.3761906953999,-7.62222221335907" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.3761906953999,-7.62222221335907"
+                    Point2="21.3761906953999,-11.6222222133591"
+                    Point3="25.3761906953999,-11.6222222133591" />
+                  <mssgle:LineSegment
+                    End="35.2523813907998,-11.6222222133591" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0.476288351649899,1,41.7998046875,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Desafio 1.Paths[PREFERENCIAL]"
+          TopLeft="818.577779291546,379.966012880489">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="71.3047621252384,40.2418299922977"
+              Start="0,0"
+              End="71.3047621252384,32.7418299922977">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.3311504240587" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.3311504240587"
+                    Point2="0,16.3311504240587"
+                    Point3="4,16.3311504240587" />
+                  <mssgle:LineSegment
+                    End="67.3047621252384,16.3311504240587" />
+                  <mssgle:CubicBezierSegment
+                    Point1="67.3047621252384,16.3311504240587"
+                    Point2="71.3047621252384,16.3311504240587"
+                    Point3="71.3047621252384,20.3311504240587" />
+                  <mssgle:LineSegment
+                    End="71.3047621252384,32.7418299922977" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="1.3554474688692,21.3311504240587,68.5938671875,9.5341796875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Desafio 1.Paths[OLE DB Source Output2]"
+          TopLeft="485.806350109373,106.599999943025">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-129.745125048945,58.7403360465015"
+              Start="0,0"
+              End="-129.745125048945,51.2403360465015">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.3089148129357" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.3089148129357"
+                    Point2="0,38.3089148129357"
+                    Point3="-4,38.3089148129357" />
+                  <mssgle:LineSegment
+                    End="-125.745125048945,38.3089148129357" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-125.745125048945,38.3089148129357"
+                    Point2="-129.745125048945,38.3089148129357"
+                    Point3="-129.745125048945,42.3089148129357" />
+                  <mssgle:LineSegment
+                    End="-129.745125048945,51.2403360465015" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3869,7 +3049,7 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Desafio 1.Paths[OLE DB Source Output1]"
-          TopLeft="328.730612812272,105.835294061342">
+          TopLeft="329.127438209942,105.835294061342">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3890,31 +3070,31 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Desafio 1.Paths[OLE DB Source Output2]"
-          TopLeft="486.600000904714,106.599999943025">
+          Id="Package\Desafio 1.Paths[OLE DB Source Output]"
+          TopLeft="176.377778017852,108.214379026577">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-130.538775844285,58.7403360465015"
+              EndConnector="123.683447042576,57.1259569629491"
               Start="0,0"
-              End="-130.538775844285,51.2403360465015">
+              End="123.683447042576,49.6259569629491">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.3089148129357" />
+                    End="0,33.2560588888799" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,34.3089148129357"
-                    Point2="0,38.3089148129357"
-                    Point3="-4,38.3089148129357" />
+                    Point1="0,33.2560588888799"
+                    Point2="0,37.2560588888799"
+                    Point3="4,37.2560588888799" />
                   <mssgle:LineSegment
-                    End="-126.538775844285,38.3089148129357" />
+                    End="119.683447042576,37.2560588888799" />
                   <mssgle:CubicBezierSegment
-                    Point1="-126.538775844285,38.3089148129357"
-                    Point2="-130.538775844285,38.3089148129357"
-                    Point3="-130.538775844285,42.3089148129357" />
+                    Point1="119.683447042576,37.2560588888799"
+                    Point2="123.683447042576,37.2560588888799"
+                    Point3="123.683447042576,41.2560588888799" />
                   <mssgle:LineSegment
-                    End="-130.538775844285,51.2403360465015" />
+                    End="123.683447042576,49.6259569629491" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3923,200 +3103,20 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="154.4,41.6"
-          Id="Package\Desafio 1\Conditional Split"
-          TopLeft="240.929705728296,515.889822158311" />
-        <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Desafio 1\CR Consolidado"
-          TopLeft="12.3015873277742,516.581698908405" />
-        <NodeLayout
-          Size="146.4,41.6"
-          Id="Package\Desafio 1\GT Conslidado"
-          TopLeft="52.3809524924576,628.738561555194" />
-        <NodeLayout
-          Size="152,41.6"
-          Id="Package\Desafio 1\Hn Consolidado"
-          TopLeft="447.653062177426,586.429318074315" />
         <EdgeLayout
-          Id="Package\Desafio 1.Paths[Costa Rica]"
-          TopLeft="240.929705728296,537.035760533358">
+          Id="Package\Desafio 1.Paths[Multicast Output 2]"
+          TopLeft="393.809524392392,269.205228605492">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-77.4281184005216,0"
+              EndConnector="125.238095760143,0"
               Start="0,0"
-              End="-69.9281184005216,0">
+              End="117.738095760143,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-69.9281184005216,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-58.4799381065108,5,47.0317578125,9.5537109375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Desafio 1.Paths[Guatemala]"
-          TopLeft="274.209705728296,557.489822158311">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-148.628753235838,71.2487393968825"
-              Start="0,0"
-              End="-148.628753235838,63.7487393968825">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.4623284497488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.4623284497488"
-                    Point2="0,21.4623284497488"
-                    Point3="-4,21.4623284497488" />
-                  <mssgle:LineSegment
-                    End="-144.628753235838,21.4623284497488" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-144.628753235838,21.4623284497488"
-                    Point2="-148.628753235838,21.4623284497488"
-                    Point3="-148.628753235838,25.4623284497488" />
-                  <mssgle:LineSegment
-                    End="-148.628753235838,63.7487393968825" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-98.4852555241691,26.4623284497488,48.3417578125,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Desafio 1.Paths[Honduras]"
-          TopLeft="362.049705728296,557.489822158311">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="161.60335644913,28.9394959160039"
-              Start="0,0"
-              End="161.60335644913,21.4394959160039">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,4.71747306376369" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,4.71747306376369"
-                    Point2="0,8.71747306376369"
-                    Point3="4,8.71747306376369" />
-                  <mssgle:LineSegment
-                    End="157.60335644913,8.71747306376369" />
-                  <mssgle:CubicBezierSegment
-                    Point1="157.60335644913,8.71747306376369"
-                    Point2="161.60335644913,8.71747306376369"
-                    Point3="161.60335644913,12.7174730637637" />
-                  <mssgle:LineSegment
-                    End="161.60335644913,21.4394959160039" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="59.1741000995651,13.7174730637637,43.25515625,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Desafio 1\Data Conversion"
-          TopLeft="255.158730701896,418.982259311208" />
-        <EdgeLayout
-          Id="Package\Desafio 1.Paths[Data Conversion Output]"
-          TopLeft="332.758730701896,460.582259311208">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-14.6290249736003,55.3075628471029"
-              Start="0,0"
-              End="-14.6290249736003,47.8075628471029">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.6537814235514" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.6537814235514"
-                    Point2="0,27.6537814235514"
-                    Point3="-4,27.6537814235514" />
-                  <mssgle:LineSegment
-                    End="-10.6290249736003,27.6537814235514" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-10.6290249736003,27.6537814235514"
-                    Point2="-14.6290249736003,27.6537814235514"
-                    Point3="-14.6290249736003,31.6537814235514" />
-                  <mssgle:LineSegment
-                    End="-14.6290249736003,47.8075628471029" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="126.4,41.6"
-          Id="Package\Desafio 1\Aggregate"
-          TopLeft="271.77437699577,342.9540146535" />
-        <EdgeLayout
-          Id="Package\Desafio 1.Paths[Aggregate Output 1]"
-          TopLeft="333.866553848833,384.5540146535">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.4282446577078"
-              Start="0,0"
-              End="0,26.9282446577078">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.9282446577078" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="120,41.6"
-          Id="Package\Desafio 1\Multicast"
-          TopLeft="273.015873597052,247.660130526803" />
-        <EdgeLayout
-          Id="Package\Desafio 1.Paths[Union All Output 1]"
-          TopLeft="330.53854932874,206.940335989526">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.7197945372768"
-              Start="0,0"
-              End="0,33.2197945372768">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.2197945372768" />
+                    End="117.738095760143,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4127,18 +3127,18 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Desafio 1.Paths[Multicast Output 1]"
-          TopLeft="333.995125296411,289.260130526803">
+          TopLeft="335.899887205227,288.410457324934">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53.6938841266972"
+              EndConnector="0,57.687348175484"
               Start="0,0"
-              End="0,46.1938841266972">
+              End="0,50.187348175484">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.1938841266972" />
+                    End="0,50.187348175484" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4147,116 +3147,42 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="136,41.6"
-          Id="Package\Desafio 1\Aggregate 1"
-          TopLeft="519.047620152535,249.99999988605" />
         <EdgeLayout
-          Id="Package\Desafio 1.Paths[Multicast Output 2]"
-          TopLeft="393.015873597052,269.630065206426">
+          Id="Package\Desafio 1.Paths[Honduras]"
+          TopLeft="343.323356523636,557.489822158311">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="126.031746555483,0"
+              EndConnector="180.32970565379,28.9394959160041"
               Start="0,0"
-              End="118.531746555483,0">
+              End="180.32970565379,21.4394959160041">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="118.531746555483,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Desafio 1\Data Conversion 1"
-          TopLeft="705.555557057498,245.947712210509" />
-        <EdgeLayout
-          Id="Package\Desafio 1.Paths[Aggregate Output 11]"
-          TopLeft="655.047620152535,268.77385604828">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="50.5079369049631,0"
-              Start="0,0"
-              End="43.0079369049631,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
+                    End="0,7.7538875720386" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.7538875720386"
+                    Point2="0,11.7538875720386"
+                    Point3="4,11.7538875720386" />
                   <mssgle:LineSegment
-                    End="43.0079369049631,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="163.2,41.6"
-          Id="Package\Desafio 1\Conditional Split 1"
-          TopLeft="711.11111262488,338.366012880489" />
-        <EdgeLayout
-          Id="Package\Desafio 1.Paths[Data Conversion Output1]"
-          TopLeft="790.333334841189,287.547712210509">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50.8183006699797"
-              Start="0,0"
-              End="0,43.3183006699797">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
+                    End="176.32970565379,11.7538875720386" />
+                  <mssgle:CubicBezierSegment
+                    Point1="176.32970565379,11.7538875720386"
+                    Point2="180.32970565379,11.7538875720386"
+                    Point3="180.32970565379,15.7538875720386" />
                   <mssgle:LineSegment
-                    End="0,43.3183006699797" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="132,41.6"
-          Id="Package\Desafio 1\EJECUTIVO"
-          TopLeft="517.460318561854,341.764705687968" />
-        <EdgeLayout
-          Id="Package\Desafio 1.Paths[EJECUTIVO]"
-          TopLeft="711.11111262488,360.865359284228">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-61.6507940630253,0"
-              Start="0,0"
-              End="-54.1507940630253,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-54.1507940630253,0" />
+                    End="180.32970565379,21.4394959160041" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-52.8332095315126,5,51.515625,9.5732421875"
+              BoundingBox="68.537274701895,16.7538875720386,43.25515625,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164,41.6"
-          Id="Package\Desafio 1\GUBERNAMENTAL"
-          TopLeft="605.753969543459,419.950980024054" />
         <EdgeLayout
           Id="Package\Desafio 1.Paths[GUBERNAMENTAL]"
           TopLeft="766.844445958213,379.966012880489">
@@ -4293,115 +3219,185 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Desafio 1\PREFERENCIAL"
-          TopLeft="814.682541416785,420.207842872787" />
         <EdgeLayout
-          Id="Package\Desafio 1.Paths[PREFERENCIAL]"
-          TopLeft="818.577779291546,379.966012880489">
+          Id="Package\Desafio 1.Paths[Guatemala]"
+          TopLeft="294.523356523636,557.489822158311">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="71.3047621252384,40.2418299922977"
+              EndConnector="-168.942404031178,71.2487393968826"
               Start="0,0"
-              End="71.3047621252384,32.7418299922977">
+              End="-168.942404031178,63.7487393968826">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,12.3311504240587" />
+                    End="0,24.9379495396569" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,12.3311504240587"
-                    Point2="0,16.3311504240587"
-                    Point3="4,16.3311504240587" />
+                    Point1="0,24.9379495396569"
+                    Point2="0,28.9379495396569"
+                    Point3="-4,28.9379495396569" />
                   <mssgle:LineSegment
-                    End="67.3047621252384,16.3311504240587" />
+                    End="-164.942404031178,28.9379495396569" />
                   <mssgle:CubicBezierSegment
-                    Point1="67.3047621252384,16.3311504240587"
-                    Point2="71.3047621252384,16.3311504240587"
-                    Point3="71.3047621252384,20.3311504240587" />
+                    Point1="-164.942404031178,28.9379495396569"
+                    Point2="-168.942404031178,28.9379495396569"
+                    Point3="-168.942404031178,32.9379495396569" />
                   <mssgle:LineSegment
-                    End="71.3047621252384,32.7418299922977" />
+                    End="-168.942404031178,63.7487393968826" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="1.35544746886922,21.3311504240587,68.5938671875,9.5341796875"
+              BoundingBox="-108.642080921839,33.9379495396569,48.3417578125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="120.8,41.6"
-          Id="Package\Desafio 1\TURISTA"
-          TopLeft="917.06349401568,326.74379066713" />
         <EdgeLayout
-          Id="Package\Desafio 1.Paths[TURISTA]"
-          TopLeft="874.31111262488,359.166012880489">
+          Id="Package\Desafio 1.Paths[EJECUTIVO]"
+          TopLeft="711.11111262488,360.865359284228">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="42.7523813907998,-11.6222222133591"
+              EndConnector="-61.6507940630253,0"
               Start="0,0"
-              End="35.2523813907998,-11.6222222133591">
+              End="-54.1507940630253,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="17.3761906953999,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="17.3761906953999,0"
-                    Point2="21.3761906953999,0"
-                    Point3="21.3761906953999,-4" />
-                  <mssgle:LineSegment
-                    End="21.3761906953999,-7.62222221335907" />
-                  <mssgle:CubicBezierSegment
-                    Point1="21.3761906953999,-7.62222221335907"
-                    Point2="21.3761906953999,-11.6222222133591"
-                    Point3="25.3761906953999,-11.6222222133591" />
-                  <mssgle:LineSegment
-                    End="35.2523813907998,-11.6222222133591" />
+                    End="-54.1507940630253,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0.476288351649885,1,41.7998046875,9.5537109375"
+              BoundingBox="-52.8332095315127,5,51.515625,9.5732421875"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Desafio 1.Paths[Data Conversion Output1]"
+          TopLeft="790.333334841189,287.547712210509">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.8183006699797"
+              Start="0,0"
+              End="0,43.3183006699797">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.3183006699797" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Desafio 1.Paths[Data Conversion Output]"
+          TopLeft="332.758730701896,460.582259311208">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-13.8353741782601,55.3075628471029"
+              Start="0,0"
+              End="-13.8353741782601,47.8075628471029">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.6537814235515" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.6537814235515"
+                    Point2="0,27.6537814235515"
+                    Point3="-4,27.6537814235515" />
+                  <mssgle:LineSegment
+                    End="-9.83537417826011,27.6537814235515" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-9.83537417826011,27.6537814235515"
+                    Point2="-13.8353741782601,27.6537814235515"
+                    Point3="-13.8353741782601,31.6537814235515" />
+                  <mssgle:LineSegment
+                    End="-13.8353741782601,47.8075628471029" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Desafio 1.Paths[Costa Rica]"
+          TopLeft="241.723356523636,536.689822158311">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-73.4598644238202,-61.3342669863871"
+              Start="0,0"
+              End="-65.9598644238202,-61.3342669863871">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-32.7299322119101,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-32.7299322119101,0"
+                    Point2="-36.7299322119101,0"
+                    Point3="-36.7299322119101,-4" />
+                  <mssgle:LineSegment
+                    End="-36.7299322119101,-57.3342669863871" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-36.7299322119101,-57.3342669863871"
+                    Point2="-36.7299322119101,-61.3342669863871"
+                    Point3="-40.7299322119101,-61.3342669863871" />
+                  <mssgle:LineSegment
+                    End="-65.9598644238202,-61.3342669863871" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-60.2458111181601,1,47.0317578125,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Desafio 1.Paths[Aggregate Output 11]"
+          TopLeft="655.047620152535,268.77385604828">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50.5079369049631,0"
+              Start="0,0"
+              End="43.0079369049631,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="43.0079369049631,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Desafio 1\Costa Rica">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Desafio 1\Guatemala">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Desafio 1\Honduras">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Desafio 1\CR Consolidado">
+    design-time-name="Package\Desafio 1\GUBERNAMENTAL">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4410,6 +3406,14 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Desafio 1\Honduras">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -4427,7 +3431,49 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Desafio 1\Costa Rica">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Desafio 1\PREFERENCIAL">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Desafio 1\Guatemala">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Desafio 1\Hn Consolidado">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Desafio 1\TURISTA">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4453,33 +3499,7 @@ join tipo_clientes tc on tc.idtipocliente = c.idtipocliente</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Desafio 1\GUBERNAMENTAL">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Desafio 1\PREFERENCIAL">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Desafio 1\TURISTA">
+    design-time-name="Package\Desafio 1\CR Consolidado">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
